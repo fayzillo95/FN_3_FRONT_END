@@ -1,0 +1,23 @@
+html{
+    margin: 0%;
+}
+
+.container{
+    background-color: antiquewhite;
+    width: 80%;
+    height: 100vh;
+    border: groove green 3px;
+    margin: auto;
+}
+
+.box{
+    display: flex;
+    width: 80%;
+    height: 70vh;
+    padding-top: 1%;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    border: groove green 3px;
+}
