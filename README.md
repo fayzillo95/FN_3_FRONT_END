@@ -5,3 +5,5 @@
  - ummatovfayzilllo@gmail.com
  - +998916102141
  - @Fayzillo_Ummatov
+
+# BU REPOSITORY  frontend vazifalari uchun
