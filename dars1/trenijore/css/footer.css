@@ -1,0 +1,28 @@
+.footer-container{
+    display: flex;
+    /* border: groove rgb(84, 168, 112); */
+}
+.footer-left-box{
+    /* border: groove, green, 3px ; */
+    width: 60%;
+    background-image : url("../images/3213337.jpg");
+    padding-left : 10px;
+}
+.footer-center-box{
+    /* border: groove, green, 3px ; */
+    text-align: center;
+    font-size: 40px;
+    width: 60%;
+    background-image : url("../images/3213337.jpg");
+    padding-left : 10px;
+}
+.footer-right-box{
+    /* border: groove, green, 3px ; */
+    width: 60%;
+    background-image : url("../images/3213337.jpg");
+    padding-left : 10px;
+}
+.footer-center-box-center-h3-marque{
+    text-align: center;
+    font-size: 30px;
+}

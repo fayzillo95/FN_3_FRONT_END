@@ -1,0 +1,32 @@
+.input-form-data_in{
+    background-color: rgba(240, 248, 255, 0.041);
+    border-bottom: inset 5px rgb(12, 8, 48);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    color: beige; 
+    width: 70%;
+    font-size: 30px;
+}
+.label-form-data{
+    color: rgb(23, 36, 31);
+    font-size: 20px;
+    color: chocolate;
+    background-color: antiquewhite;
+    height: 40px;
+    border: none;
+    width: 30%;
+    margin-left: 2%;
+    padding-left: 5%;
+    padding-right: 1%;
+    padding-bottom: 0%;
+}
+
+.input-form-data-div{
+    display: flex;
+}
+
+.form-data{
+    background-color: rgba(88, 206, 108, 0.774);
+    border-radius: 5%;
+}

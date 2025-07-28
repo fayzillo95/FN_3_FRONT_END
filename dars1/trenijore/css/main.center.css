@@ -1,0 +1,81 @@
+main {
+    /* border: groove, green, 3px; */
+    width: 100%;
+    height: 100vh;
+    margin: 0%;
+    display: flex;
+    background-image: url("https://pin.it/eiqtKL1KA");
+    color: antiquewhite;
+}
+
+.main-left {
+    /* border: groove, green, 3px; */
+    /* background-image: url("../images/images.jpeg"); */
+    background: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: black;
+    width: 30%;
+}
+
+.main-center {
+    /* border: groove, green, 3px; */
+    margin: 0%;
+    padding: 0px;
+    width: 100%;
+}
+
+.main-right {
+    /* border: groove, green, 3px; */
+    background-image: url("../images/Copy-of-codewithrandom11.webp");
+    width: 30%;
+}
+
+.main-center-body {
+    display: flex;
+    background-image: url("../images/3213337.jpg");
+    margin: 0%;
+    padding-bottom: 0%;
+    height: 100%;
+}
+
+.main-center-header {
+    /* border: groove red 3px; */
+    margin: 0%;
+    background-image: url("../images/Copy-of-codewithrandom11.webp");
+}
+
+.main-center-body-left {
+    /* border: groove red 3px; */
+    background-image: url("../images/_left_body_miage_.jpg");
+    height: 90vh;
+    width: 100%;
+    color: antiquewhite;
+}
+
+.main-center-body-right {
+    width: 100%;
+    /* border: groove red 3px; */
+    background-image: url("../images/79fdd17253b569a417e980a99aecd978.jpg");
+}
+.main-center-body-right-bottom-h4{
+    text-align: center;
+    color: blueviolet;
+    font-size: 30px;
+    background-color: rgba(0, 255, 255, 0.233);
+    margin-left: 10%;
+    margin-bottom: 2%;
+    border-radius: 5%;
+    width: 80%;
+}
+.main-center-body-right-bottom{
+    display: flexbox;
+}
+.main-center-body-right-bottom-p{
+    text-align: center;
+    font-size: 16px;
+    color: rgb(124, 24, 74);
+    margin-top: 2%;
+    background-color: rgba(47, 219, 219, 0.158);
+}

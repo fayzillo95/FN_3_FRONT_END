@@ -1,0 +1,21 @@
+.li_item_images{
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+}
+.li_main_left_item{
+    display: flex;
+    /* border: groove #32eb32 2px; */
+    margin-left: 2%;
+    padding-left: 0%;
+}
+
+.li_item_p{
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.main-left-box-ul{
+    margin-left: 0%;
+    padding-left: 2%;
+}
