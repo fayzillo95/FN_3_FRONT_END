@@ -1,0 +1,64 @@
+* {
+    color: azure;
+    background-color: transparent;
+}
+
+.desciption-header {
+    display: inline-block;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+#header-h1 {
+    margin-left: 25px;
+}
+
+.fon-change-div {
+    display: flex;
+}
+
+#fon-change-button {
+    width: 200px;
+    height: 50px;
+    margin-right: 50px;
+    background-color: transparent;
+}
+
+.searchInput-div {
+    padding: 0px;
+    display: flex;
+    align-content: flex-end;
+}
+
+#search-button {
+    width: 50px;
+    height: 40px;
+    margin: o auto;
+}
+
+#seachInput {
+    height: 40px;
+    width: 100%;
+    margin: 0%;
+    margin-left: 10px;
+    font-size: 38px;
+    outline: none;
+    color: rgb(187, 156, 156);
+    background-color: transparent;
+    border-bottom: groove red 5px;
+}
+
+#selection-header {
+    background-color: transparent;
+    display: none;
+    color: aliceblue;
+}
+.option-region{
+    background-color: transparent;
+}
+#filter-option {
+    background-color: red;
+    color: rgb(14, 125, 223);
+    height: 40px;
+    margin: 0%;
+    font-size: 38px;
+}

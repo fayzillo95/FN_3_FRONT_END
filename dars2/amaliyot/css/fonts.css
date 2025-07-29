@@ -1,0 +1,27 @@
+.info-h1{
+    font-size: 100px;
+    margin-left: 2%;
+}
+.info-p{
+    font-size: 50px;
+    color: rgb(34, 29, 29);
+    padding-left: 2%;
+}
+
+#header-left-logo-label{
+    font-size: 50px;
+}
+.h3-items{
+    border: initial goldenrod 3px;
+    color: brown;
+}
+#info-class-button{
+    width: 25%;
+    height: 5vh;
+    margin-left: 2%;
+}
+
+.header-right-h2{
+    width: 100%;
+    margin: 2%;
+}

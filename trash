@@ -1,0 +1,57 @@
+// const countriesUl = document.getElementById("country-list")
+
+
+// function getCoutriesListWriter() {
+//   fetch("https://restcountries.com/v3.1/all?fields=name,capital,population,flags,languages,currencies,region,subregion,borders")
+//     .then(response => {
+//       if (!response.ok) {
+//         throw new Error(`HTTP error! status: ${response.status}`);
+//       }
+//       return response.json();
+//     })
+//     .then(data => {
+//       console.log("✅ Davlatlar ro'yxati:");
+//       console.log(data[0]);
+//       const li = document.createElement("li")
+//       const img = document.createElement("img")
+//       const h2 = document.createElement("h2")
+//       const h3 = document.createElement("h3")
+//       const p = document.createElement("p")
+//       const p2 = document.createElement("p")
+//       const p3 = document.createElement("p")
+//       const borders = document.createElement("p")
+     
+//       borders.textContent = "Border Countries : " + data[0].borders.join(", ")
+//       p3.textContent = "Sub Region : " + data[0].subregion
+//       p2.textContent = "Region : " + data[0].region
+//       p.textContent = "Capitals : " + data[0].capital.join(", ")
+//       const div = document.createElement("div")
+//       li.style.display = "flex"
+//       h2.textContent = "Name : "  + data[0].name.nativeName.ron.common
+//       h3.textContent = `Populate : ${data[0].population}`  
+//       div.appendChild(h2)  
+//       div.appendChild(h3)
+//       div.appendChild(p)
+//       div.appendChild(p2)
+//       div.appendChild(p3)
+//       div.appendChild(borders)
+//       img.setAttribute("src",data[0].flags.png)
+//       img.setAttribute("slt",data[0].flags.alt)
+//       li.appendChild(img)
+//       li.appendChild(div)
+//       countriesUl.appendChild(li)
+//     })
+//     .catch(error => {
+//       console.error("❌ Xatolik:", error);
+//     });
+// }
+
+async function getByName(name){
+    console.log(name)
+    const url = `https://restcountries.com/v3.1/name/${name}?fields=name,capital,population,flags,languages,currencies,region,subregion,borders`;
+    const request = await fetch(url)
+    const response = await request.json()
+    console.log(response)
+}
+
+getByName("Uzbekistan")
