@@ -1,0 +1,83 @@
+* {
+  /* Scroll ko‘rinishini belgilash */
+  overflow: auto;         /* Kontent sig‘may qolsa scroll hosil bo‘ladi (vertikal va/yoki gorizontal) */
+  overflow: hidden;       /* Scroll ko‘rinmaydi, ortiqcha kontent kesiladi */
+  overflow: visible;      /* Default: ortiqcha kontent ko‘rinadi */
+  overflow: scroll;       /* Har doim scroll ko‘rsatiladi, kontent sig‘sa ham */
+
+  overflow-x: auto;       /* Faqat gorizontal yo‘nalishda scroll */
+  overflow-y: scroll;     /* Faqat vertikal yo‘nalishda scroll */
+
+  /* Yangi scroll xossalari */
+  overflow-inline: auto;  /* Inline (chapdan o‘ngga) yo‘nalishdagi overflow */
+  overflow-block: hidden; /* Block (yuqoridan pastga) yo‘nalishdagi overflow */
+
+  /* Scroll holatini silliq o‘zgartirish */
+  scroll-behavior: smooth;   /* Silliq scroll */
+  /* scroll-behavior: auto;  Default, darhol joylashadi */
+
+  /* Scroll joylashgan joyni belgilash (komponentlar orasida) */
+  scroll-margin: 20px;
+  scroll-margin-top: 10px;
+  scroll-margin-right: 10px;
+  scroll-margin-bottom: 10px;
+  scroll-margin-left: 10px;
+
+  /* Scrollga tegishli padding (scroll qilingan elementni joylashda foydalaniladi) */
+  scroll-padding: 10px;
+  scroll-padding-top: 10px;
+  scroll-padding-bottom: 10px;
+  scroll-padding-left: 10px;
+  scroll-padding-right: 10px;
+
+  /* Scroll snap (qadamli joylashish) */
+  scroll-snap-type: x mandatory;     /* Gorizontalda scroll qadam bilan */
+  scroll-snap-type: y proximity;     /* Vertikalda yaqin joyga qadam bilan */
+
+  scroll-snap-align: start;          /* Element boshidan tekislanadi */
+  /* center, end, none ham bo'lishi mumkin */
+
+  scroll-snap-stop: always;          /* Har bir elementda to‘xtaydi */
+  /* scroll-snap-stop: normal;       Default */
+
+  /* Scroll ko‘rinish uslubi (faqat Webkit brauzerlar uchun) */
+  scrollbar-width: auto;             /* Firefox – default o‘lcham */
+  scrollbar-width: thin;             /* Yupqa scroll bar */
+  scrollbar-width: none;             /* Scroll barni ko‘rsatmaydi */
+
+  /* Webkit scroll bar uslublari (Chrome, Safari) */
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Scroll bilan ishlash uchun konteyner misoli */
+.scroll-container {
+  height: 200px;
+  width: 300px;
+  overflow: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: thin;
+}
+
+.scroll-item {
+  scroll-snap-align: start;
+  height: 200px;
+}

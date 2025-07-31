@@ -1,0 +1,86 @@
+.background {
+    /* 1. background-color - fon rangi */
+    background-color: red;
+    background-color: #f0f0f0;
+    background-color: transparent;
+
+    /* 2. background-image - fon rasmi */
+    background-image: url('images/bg.jpg');
+    background-image: none;
+
+    /* 3. background-repeat - rasm takrori */
+    background-repeat: repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: no-repeat;
+    background-repeat: space;
+    background-repeat: round;
+
+    /* 4. background-position - rasm joylashuvi */
+    background-position: left top;
+    background-position: center center;
+    background-position: right bottom;
+    background-position: 50% 50%;
+    background-position: 10px 20px;
+
+    /* 5. background-size - rasm o‘lchami */
+    background-size: auto;
+    background-size: cover;
+    background-size: contain;
+    background-size: 100px 200px;
+
+    /* 6. background-attachment - scroll harakati */
+    background-attachment: scroll;
+    background-attachment: fixed;
+    background-attachment: local;
+
+    /* 7. background-origin - fon rasmi qayerdan boshlanadi */
+    background-origin: padding-box;
+    background-origin: border-box;
+    background-origin: content-box;
+
+    /* 8. background-clip - fon rasmi qayergacha ko‘rinadi */
+    background-clip: border-box;
+    background-clip: padding-box;
+    background-clip: content-box;
+    background-clip: text; /* faqat webkit brauzerlarda */
+
+    /* 9. background-blend-mode - ranglar birikmasi */
+    background-blend-mode: normal;
+    background-blend-mode: multiply;
+    background-blend-mode: screen;
+    background-blend-mode: overlay;
+    background-blend-mode: darken;
+    background-blend-mode: lighten;
+
+    /* 10. background - qisqacha yozish */
+    background: red url("bg.jpg") no-repeat center center / cover fixed;
+    background: none;
+    background: transparent;
+}
+.background {
+    background-color: red;            /* Orqa fon rangi */
+    background-image: url('image.jpg'); /* Orqa fon rasmi */
+    background-repeat: no-repeat;     /* Rasm takrorlanmasligi */
+    background-repeat: repeat;        /* Rasm har tomonga takrorlanadi */
+    background-repeat: repeat-x;      /* Faqat gorizontal bo‘yicha takrorlanadi */
+    background-repeat: repeat-y;      /* Faqat vertikal bo‘yicha takrorlanadi */
+    background-attachment: scroll;    /* Scroll qilganda fon ham harakatlanadi */
+    background-attachment: fixed;     /* Fon doim joyida qoladi */
+    background-position: center;      /* Rasm markazda */
+    background-position: top left;    /* Yuqori chap burchakda */
+    background-position: 50% 50%;     /* Nisbatlarda markaz */
+    background-size: cover;           /* Ekranga to‘liq sig‘diriladi */
+    background-size: contain;         /* Rasm konteynerga sig‘adi, lekin qirqilmaydi */
+    background-size: 100px 200px;     /* Aniq o‘lcham berish */
+    background-origin: padding-box;   /* Fon rasmi padding ichidan boshlanadi */
+    background-origin: border-box;    /* Fon rasmi borderdan boshlanadi */
+    background-origin: content-box;   /* Fon rasmi faqat kontent ichida bo‘ladi */
+    background-clip: border-box;      /* Fon bordergacha ko‘rinadi */
+    background-clip: padding-box;     /* Fon paddinggacha ko‘rinadi */
+    background-clip: content-box;     /* Fon faqat kontentda ko‘rinadi */
+    background-blend-mode: multiply;  /* Rasm va rang ustma-ust berilganda qanday qorishishini belgilaydi */
+
+    background: url('image.jpg') no-repeat center/cover fixed red;
+    /* Qisqa yozuvi: rasm, takrorlanmaslik, pozitsiya/o‘lcham, joylashish, rang */
+}

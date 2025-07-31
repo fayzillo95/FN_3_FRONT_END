@@ -1,0 +1,251 @@
+h1 {
+    /* ⚠️ Faqat oxirgi qiymat ishlaydi (CSSda oxirgisi ustun turadi).
+       Real holatda bir dona 'display' ishlatiladi. Quyidagilar misol sifatida berilgan. */
+
+    display: block;
+    /* 🔹 Standart block element (h1 uchun default) */
+    display: inline;
+    /* 🔹 Yonma-yon, faqat kontent hajmicha joy egallaydi */
+    display: inline-block;
+    /* 🔹 Inline kabi joylashadi, lekin width/height beriladi */
+    display: none;
+    /* 🔴 Ko‘rinmaydi, DOMda qoladi */
+
+    display: flex;
+    /* 🔸 Flex konteyner (1-qatorli tartib uchun) */
+    display: inline-flex;
+    /* 🔸 Flex, lekin inline ko‘rinishida */
+    display: grid;
+    /* 🔸 Grid konteyner (2D joylashuv) */
+    display: inline-grid;
+    /* 🔸 Grid, lekin inline ko‘rinishida */
+
+    display: table;
+    /* 🔸 Elementni jadval sifatida ko‘rsatadi */
+    display: table-row;
+    /* 🔸 Jadvalning qatori */
+    display: table-cell;
+    /* 🔸 Jadvalning katagi */
+    display: table-caption;
+    /* 🔸 Jadval sarlavhasi */
+    display: table-column;
+    /* 🔸 Jadval ustuni */
+    display: table-column-group;
+    /* 🔸 Ustunlar guruhi */
+    display: table-footer-group;
+    /* 🔸 Jadval tag qismi */
+    display: table-header-group;
+    /* 🔸 Jadval bosh qismi */
+    display: table-row-group;
+    /* 🔸 Jadval qatorlar guruhi */
+
+    display: list-item;
+    /* 🔸 Ro‘yxat elementi kabi ko‘rinadi (• belgi qo‘shiladi) */
+    display: run-in;
+    /* ⚠️ Kam qo‘llanadi. Kontekstga qarab block yoki inline */
+    display: contents;
+    /* 🔸 Elementni o‘chiradi, faqat ichidagi bolalar DOMda qoladi */
+    display: flow-root;
+    /* 🔸 Yangi block formatting context yaratadi */
+
+    /* ❌ Quyidagilar noto‘g‘ri qiymatlar (standart CSS'da yo‘q): */
+    display: flexbox;
+    /* ❌ Noto‘g‘ri, to‘g‘risi: 'flex' */
+    display: inline-flexbox;
+    /* ❌ Noto‘g‘ri */
+}
+
+/* display: flex  xossalari {
+    flex-direction:row;
+    /* Yo‘nalishni belgilaydi: row, column, ... */
+    flex-wrap
+    /* Qatorga sig‘masa o‘rash */
+    flex-flow
+    /* flex-direction + flex-wrap qisqa yozuvi */
+    justify-content
+    /* Asosiy yo‘nalishda joylashtirish */
+    align-items
+    /* Vertikal yo‘nalishda joylashtirish */
+    align-content
+    /* Bir nechta qatorlar o‘rtasida bo‘shliq */
+    gap
+    /* Elementlar orasidagi bo‘shliq */
+    row-gap
+    /* Faqat qatorlar orasidagi bo‘shliq */
+    column-gap
+    /* Faqat ustunlar orasidagi bo‘shliq */
+    order
+    /* Tartib raqami (ichki elementlarda ishlaydi) */
+    flex-grow
+    /* Bo‘sh joydan o‘sish darajasi */
+    flex-shrink
+    /* Kichrayish darajasi */
+    flex-basis
+    /* Boshlang‘ich o‘lcham */
+    align-self
+    /* Bitta elementga alohida vertikal joylashuv */
+
+/*} */
+
+
+ /*display: inline, inline-block, block bilan mos:*/
+css
+Copy
+Edit
+width                 /* Element eni */
+height                /* Element bo‘yi */
+margin                /* Tashqi bo‘shliq */
+padding               /* Ichki bo‘shliq */
+vertical-align        /* Inline elementlar orasida tekislik */
+text-align            /* Matnni tekislash */
+line-height           /* Qator balandligi */
+/*overflow              Tashqariga chiqqan kontentni boshqarish*/
+
+🔹 display: table bilan bog‘liq:
+css
+Copy
+Edit
+border-collapse       /* Jadval chetlari: collapse yoki separate */
+table-layout          /* Jadval tuzilishi: fixed yoki auto */
+vertical-align        /* Katak ichidagi joylashuv */
+caption-side          /* Sarlavhaning joylashuvi: top yoki bottom */
+
+
+position              /* static, relative, absolute, fixed, sticky */
+z-index               /* Qavat tartibi */
+visibility            /* Ko‘rinish: visible, hidden */
+overflow              /* Tashqariga chiqqan qismlarni boshqarish */
+box-sizing            /* Border va padding width'ga kiradimi yoki yo‘q */
+
+
+
+.justify-content {
+    /* justify-content — bu flex yoki grid konteyner ichidagi elementlarni asosiy yo'nalishda (masalan, gorizontal) joylashtiradi */
+
+    justify-content: flex-start;
+    /* 🔹 Elementlar boshidan (chapdan yoki yuqoridan) joylashadi */
+    justify-content: flex-end;
+    /* 🔹 Elementlar oxiridan (o‘ngdan yoki pastdan) joylashadi */
+    justify-content: center;
+    /* 🔹 Elementlar konteyner markaziga joylashadi */
+    justify-content: space-between;
+    /* 🔹 Elementlar orasida teng bo‘shliq, chetlarda esa yo‘q */
+    justify-content: space-around;
+    /* 🔹 Har bir element atrofida teng bo‘shliq (chap va o‘ngda yarim) */
+    justify-content: space-evenly;
+    /* 🔹 Har bir element orasida va chetlarda bir xil bo‘shliq */
+    justify-content: start;
+    /* 🔹 Yozuv yo‘nalishiga qarab boshlanish tomondan joylashadi */
+    justify-content: end;
+    /* 🔹 Yozuv yo‘nalishiga qarab tugash tomondan joylashadi */
+    justify-content: left;
+    /* 🔸 Chapga tekislanadi (faqat grid layoutda) */
+    justify-content: right;
+    /* 🔸 O‘ngga tekislanadi (faqat grid layoutda) */
+    justify-content: baseline;
+    /* 🔸 Elementlar matnning pastki chizig‘iga (baseline) tekislanadi */
+}
+
+.align-content {
+    /* ✅ align-content — flex/grid konteyner ichidagi qatorlarni (yoki ustunlarni) vertikal yo‘nalishda boshqaradi.
+       ❗ Faqat 2 yoki undan ko‘p qator mavjud bo‘lsa ishlaydi (masalan, flex-wrap: wrap bo‘lsa).
+    */
+
+    align-content: flex-start;
+    /* 🔹 Qatorlar konteynerning yuqorisiga joylashadi */
+    align-content: flex-end;
+    /* 🔹 Qatorlar konteynerning pastiga joylashadi */
+    align-content: center;
+    /* 🔹 Qatorlar konteynerning markaziga joylashadi */
+    align-content: space-between;
+    /* 🔹 Qatorlar orasida teng bo‘shliq, chetlarda yo‘q */
+    align-content: space-around;
+    /* 🔹 Har bir qatordan oldin va keyin teng bo‘shliq */
+    align-content: space-evenly;
+    /* 🔹 Barcha qatorlar orasida va chetlarda bir xil bo‘shliq */
+    align-content: stretch;
+    /* 🔹 Qatorlar konteyner balandligiga tortiladi (default qiymat) */
+    align-content: start;
+    /* 🔹 Yozuv yo‘nalishiga ko‘ra yuqoriga */
+    align-content: end;
+    /* 🔹 Yozuv yo‘nalishiga ko‘ra pastga */
+    align-content: baseline;
+    /* 🔸 Har bir qatordagi elementlarning baseline chizig‘i tekislanadi */
+
+
+    /* ✅ align-items — bitta qatordagi (yoki ustundagi) **elementlarni** vertikal yo‘nalishda joylashtiradi */
+
+    align-items: flex-start;
+    /* 🔹 Elementlar yuqoriga joylashadi */
+    align-items: flex-end;
+    /* 🔹 Elementlar pastga joylashadi */
+    align-items: center;
+    /* 🔹 Elementlar markazga joylashadi */
+    align-items: baseline;
+    /* 🔹 Elementlarning matn chizig‘i (baseline) bo‘yicha tekislanadi */
+    align-items: stretch;
+    /* 🔹 Elementlar bo‘sh joyga tortiladi (default qiymat) */
+    align-items: start;
+    /* 🔹 Yozuv yo‘nalishiga ko‘ra yuqoriga */
+    align-items: end;
+    /* 🔹 Yozuv yo‘nalishiga ko‘ra pastga */
+}
+
+.flex {
+    /* ✅ flex-direction — asosiy yo‘nalishni (elementlar qanday qatorda/ustunda joylashishini) belgilaydi */
+    flex-direction: row;
+    /* 🔹 Default: chapdan o‘ngga (gorizontal) */
+    flex-direction: row-reverse;
+    /* 🔹 O‘ngdan chapga */
+    flex-direction: column;
+    /* 🔹 Yuqoridan pastga (vertikal) */
+    flex-direction: column-reverse;
+    /* 🔹 Pastdan yuqoriga */
+
+
+    /* ✅ flex-wrap — elementlar bir qatorga sig‘may qolsa, qanday burilishini belgilaydi */
+    flex-wrap: nowrap;
+    /* 🔹 Default: bitta qatorga sig‘dirishga urinish */
+    flex-wrap: wrap;
+    /* 🔹 Elementlar sig‘masa keyingi qatordan boshlanadi */
+    flex-wrap: wrap-reverse;
+    /* 🔹 Qatorlar teskari yo‘nalishda o‘raladi (pastdan yuqoriga) */
+
+
+    /* ✅ flex-grow — element ortiqcha bo‘sh joyni necha barobarga egallashini belgilaydi */
+    flex-grow: 0;
+    /* 🔹 Default: o‘smasin */
+    flex-grow: 1;
+    /* 🔹 Bo‘sh joydan teng o‘sish */
+    flex-grow: 2;
+    /* 🔹 2 barobar ko‘proq o‘sadi (n son bo‘lishi mumkin) */
+
+
+    /* ✅ flex-shrink — element kichrayishiga ruxsat beriladimi */
+    flex-shrink: 1;
+    /* 🔹 Default: kerak bo‘lsa kichrayadi */
+    flex-shrink: 0;
+    /* 🔹 Hech qachon kichraymasin */
+    flex-shrink: 2;
+    /* 🔹 2 barobar tezroq kichrayadi (n son bo‘lishi mumkin) */
+
+
+    /* ✅ flex-basis — elementning boshlang‘ich o‘lchamini belgilaydi */
+    flex-basis: auto;
+    /* 🔹 Default: kontent yoki width asosida */
+    flex-basis: 0;
+    /* 🔹 Bo‘sh joyni teng taqsimlash uchun ishlatiladi */
+    flex-basis: 100px;
+    /* 🔹 Dastlabki o‘lcham 100px bo‘lsin */
+    flex-basis: 50%;
+    /* 🔹 Konteynerning yarmicha o‘lcham beriladi */
+
+
+    /* ✅ flex-flow — shorthand (qisqa yozuv), bu birlashtiradi: flex-direction + flex-wrap */
+    flex-flow: row wrap;
+    /* 🔹 Chapdan o‘ngga va qatorga sig‘masa o‘ralsin */
+    flex-flow: column nowrap;
+    /* 🔹 Ustun bo‘ylab, o‘ralmasin */
+    flex-flow: row-reverse wrap;
+    /* 🔹 O‘ngdan chapga va o‘ralsin */
+}

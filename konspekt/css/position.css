@@ -1,0 +1,47 @@
+* {
+    /* Asosiy position xossasi */
+    position: static;     /* Default qiymat, element oqimga muvofiq joylashadi */
+    position: relative;   /* Element nisbiy joylashadi, top/right/bottom/left ishlaydi */
+    position: absolute;   /* Eng yaqin nisbiy pozitsiyadagi ota elementga nisbatan joylashadi */
+    position: fixed;      /* Butun oynaga nisbatan bir joyda qoladi */
+    position: sticky;     /* Belgilangan joyga yopishadi scroll vaqtida */
+
+    /* Koordinatalar (faqat position: relative, absolute, fixed, sticky ishlatilganda) */
+    top: 20px;
+    right: 10px;
+    bottom: 30px;
+    left: 15px;
+
+    /* Z-index: elementlarni ustma-ust tartiblash */
+    z-index: 10;          /* Raqam katta bo‘lsa, ustida chiqadi */
+
+    /* Overflow – tashqariga chiqqan kontentni boshqarish */
+    overflow: visible;    /* Default, kontent tashqariga chiqadi */
+    overflow: hidden;     /* Tashqariga chiqqan qismi ko‘rinmaydi */
+    overflow: scroll;     /* Scroll barlar har doim ko‘rinadi */
+    overflow: auto;       /* Zaruratga qarab scroll qo‘shiladi */
+
+    /* overflow-x va overflow-y – alohida yo‘nalishlar uchun */
+    overflow-x: hidden;   /* Gorizontal overflow */
+    overflow-y: auto;     /* Vertikal overflow */
+
+    /* Misollar: */
+    /* 1. Ekranga yopishgan navbar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    /* 2. Yozuvni konteynerda markazlashtirish */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* 3. Scroll paytida yopishadigan menyu */
+    position: sticky;
+    top: 0;
+
+    /* 4. Tashqariga chiqqan kontentni yashirish */
+    overflow: hidden;
+}

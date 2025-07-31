@@ -1,0 +1,69 @@
+/* *{
+    justify-content: ;
+    justify-self: ;
+    justify-items: ;
+} */
+
+.justify-items {
+    display: grid; /* justify-items faqat grid konteynerlarda ishlaydi */
+    justify-items: start;      /* Elementlar grid xujayra ichida chapga tekislanadi */
+    justify-items: end;        /* Elementlar o‘ng tomonga tekislanadi */
+    justify-items: center;     /* Elementlar markazga tekislanadi */
+    justify-items: stretch;    /* Elementlar xujayrani to‘ldiradi (default) */
+    justify-items: baseline;   /* Ba'zi brauzerlarda ishlashi mumkin, matn tagiga tekislash */
+    justify-items: auto;       /* Ota konteynerdagi qiymatni oladi yoki default bo‘ladi */
+}
+
+/* Agar `grid` emas, `flex` bo‘lsa, quyidagilar ishlatiladi (lekin `justify-items` emas, balki `justify-content` va `align-items` kerak): */
+.flex-container {
+    display: flex;
+    justify-content: center;    /* asosiy o‘q bo‘yicha tekislaydi */
+    align-items: center;        /* kesishuvchi o‘q bo‘yicha tekislaydi */
+}
+
+/* Justify bilan bog'liq barcha xossalar va ularning qiymatlari */
+
+/* Asosan layoutlar bilan ishlaydi: flex va grid konteynerlar */
+.justify-examples {
+    display: flex;       /* yoki grid */
+    
+    /* 1. justify-content — elementlar guruhini asosiy o‘q bo‘yicha (horizontal yoki vertical) tekislaydi */
+    justify-content: start;       /* Chap tomonga (LTR tillar uchun) */
+    justify-content: end;         /* O‘ng tomonga */
+    justify-content: center;      /* Markazga */
+    justify-content: space-between; /* Boshi va oxiri yopishadi, o‘rtada teng bo‘shliq */
+    justify-content: space-around;  /* Har bir element atrofida teng bo‘shliq */
+    justify-content: space-evenly;  /* Har bir bo‘shliq, hatto boshidagi ham teng */
+    justify-content: stretch;     /* Ba'zi hollarda mavjud, gridda ishlashi mumkin */
+    justify-content: left;        /* Legacy qiymatlar (foydalanilmasligi tavsiya qilinadi) */
+    justify-content: right;
+
+    /* 2. justify-items — har bir grid elementini o‘zining xujayrasi ichida asosiy o‘q bo‘yicha joylashtiradi (faqat grid layout) */
+    justify-items: start;       /* Xujayrada chapga */
+    justify-items: end;         /* O‘ngga */
+    justify-items: center;      /* Markazga */
+    justify-items: stretch;     /* Default — xujayra bo‘yicha cho‘ziladi */
+    justify-items: baseline;    /* Matn tagiga tekislash — ba'zida ishlaydi */
+    justify-items: auto;        /* Ota konteynerga bog‘liq qiymatni oladi */
+
+    /* 3. justify-self — alohida elementning o‘z pozitsiyasini belgilaydi (gridda ishlaydi, flexda emas) */
+    justify-self: auto;         /* Ota konteynerga bog‘liq */
+    justify-self: start;        /* Chapga */
+    justify-self: end;          /* O‘ngga */
+    justify-self: center;       /* Markazga */
+    justify-self: stretch;      /* To‘liq xujayrani egallaydi */
+}
+
+/* Flex konteyner uchun misollar */
+.flex-container {
+    display: flex;
+    justify-content: center;    /* asosiy o‘q bo‘yicha markazga */
+    align-items: center;        /* kesishuvchi o‘q bo‘yicha markazga */
+}
+
+/* Grid konteyner uchun misollar */
+.grid-container {
+    display: grid;
+    justify-items: center;      /* har bir element markazga joylashadi */
+    justify-content: space-between; /* butun grid bo‘yicha elementlar orasini tarqatadi */
+}

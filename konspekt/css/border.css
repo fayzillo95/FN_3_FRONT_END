@@ -1,0 +1,53 @@
+.border {
+    /* 1. CHEGARANI ASOSIY O‘RNATISH */
+    border: 2px solid red;              /* width, style, color */
+
+    /* 2. TO‘RT TOMON UCHUN ALOHIDA */
+    border-top: 2px dashed blue;
+    border-right: 3px dotted green;
+    border-bottom: 4px double black;
+    border-left: 5px groove orange;
+
+    /* 3. ENI (WIDTH) */
+    border-width: 1px;                  /* 1px, thin, medium, thick */
+    border-top-width: 2px;
+    border-right-width: 3px;
+    border-bottom-width: 4px;
+    border-left-width: 5px;
+
+    /* 4. USLUBI (STYLE) */
+    border-style: solid;               /* none, solid, dashed, dotted, double, groove, ridge, inset, outset */
+    border-top-style: dashed;
+    border-right-style: dotted;
+    border-bottom-style: double;
+    border-left-style: groove;
+
+    /* 5. RANGI (COLOR) */
+    border-color: red;                 /* color names, hex, rgb, rgba */
+    border-top-color: blue;
+    border-right-color: green;
+    border-bottom-color: black;
+    border-left-color: orange;
+
+    /* 6. BURCHAK YUMALOQLIGI */
+    border-radius: 10px;               /* barcha burchaklar */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 5px;
+
+    /* 7. BORDER-IMAGE: chegarani rasm bilan berish */
+    border-image-source: url("border.png");    /* rasm yo‘li */
+    border-image-slice: 30;                    /* necha foiz kesiladi */
+    border-image-width: 10px;
+    border-image-outset: 5px;
+    border-image-repeat: stretch;              /* stretch | repeat | round | space */
+    border-image: url("border.png") 30 stretch;  /* qisqacha yozuv */
+
+    /* 8. SHADOW (box-shadow yordamchi, lekin tez-tez ishlatiladi) */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);   /* soyani qo‘shish */
+
+    /* 9. OUTLINE (chegara emas, lekin chegaraga o‘xshash) */
+    outline: 2px solid lime;                  /* borderdan tashqarida ko‘rinadi */
+    outline-offset: 4px;                      /* oraliq */
+}

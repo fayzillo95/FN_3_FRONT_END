@@ -1,0 +1,27 @@
+.margin {
+    /* Asosiy margin */
+    margin: 20px;                  /* Barcha yo'nalishlarda 20px */
+    margin: 10px 20px;             /* Vertikal 10px, gorizontal 20px */
+    margin: 10px 15px 20px;        /* Yuqori 10px, gorizontal 15px, pastki 20px */
+    margin: 5px 10px 15px 20px;    /* Yuqori, o'ng, pastki, chap */
+
+    /* Individual margin xossalari */
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+
+    /* Qiymatlar */
+    margin: auto;                 /* Markazga joylash */
+    margin: 0;                    /* Margin yo'q */
+    margin: 1em;                  /* 1 em birlikda */
+    margin: 5%;                   /* Ekran kengligiga nisbatan foiz */
+    margin: inherit;              /* Ota elementdan meros olish */
+    margin: initial;              /* Standart qiymatga qaytarish */
+    margin: unset;                /* Yangi kontekstda aniqlash yoki meros olish */
+
+    /* Yordamchi hossalar (shunchaki marginni to'g'ridan-to'g'ri ta'sirini bilish uchun) */
+    display: block;               /* Margin odatda block elementlarda ishlaydi */
+    width: 200px;                 /* Kenglik ko‘rsatilganda margin: auto ishlaydi */
+    background-color: lightgray; /* Ko‘rish uchun fon rangi */
+}

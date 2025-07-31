@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+.items-info1,
+.items-info2 {
+    padding: 10px 25px;
+    color: azure;
+    box-sizing: border-box;
+    background-color: #002D72;
+    width: 100%;
+}
+
+.items-info2 {
+    height: 15vh;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 25px;
+    justify-content: flex-end;
+}
+
+.items-info1 {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+select,
+option {
+    color: aliceblue;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+select::selection{
+    background: transparent;
+    border: none;
+    outline: none;
+}

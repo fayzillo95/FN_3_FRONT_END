@@ -1,0 +1,48 @@
+body{
+    border: solid green 3px;
+    height: 100vh;
+}
+
+.componentes,.panel{
+    width: 900px;
+    margin: auto;
+    margin-top: 50px;
+}
+.panel{
+    height: 20vh;
+}
+.box-componentes{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.componentes{
+    display: flex;
+    width: 950px;
+    justify-content: space-between;
+    height: 45vh;
+}
+
+.professional{
+    position: absolute;
+    height: 49vh;
+    width: 300px;
+    color: antiquewhite;
+    border: solid green 3px;
+    border-radius: 20px;
+    /* margin-left: 40.6%;
+    margin-top: 32px; */
+    background-color: rgba(54, 54, 216, 0.747);
+}
+.box-componenta{
+    height: 45vh;
+    width: 300px;
+    border: solid green 3px;
+    border-radius: 20px;
+}
+
+.learn-more{
+    width: 200px;
+    height: 40px;
+    font-size: 35;
+}

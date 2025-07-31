@@ -1,0 +1,152 @@
+* {
+    /* 1. box-sizing - element o'lchami qanday hisoblanishini belgilaydi */
+    box-sizing: content-box;    /* Default - padding va border hisobga olinmaydi */
+    box-sizing: border-box;     /* padding va border ham width va height ichida bo'ladi */
+
+    /* 2. box-shadow - soyani berish */
+    box-shadow: none;                                    /* Soya yo'q */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);           /* O'ngga pastga, 5px blur */
+    box-shadow: inset 0 0 10px #000;                     /* Ichki soya */
+    box-shadow: 0 0 10px 5px red;                        /* Hajmli tashqi soya */
+
+    /* 3. box-decoration-break - sahifadagi kesilgan elementlarda dekoratsiyani qanday bo'lishini belgilaydi */
+    box-decoration-break: slice;    /* Default - birinchi qismga faqat dekoratsiya qo‘llaniladi */
+    box-decoration-break: clone;    /* Har bir bo‘lingan qismga alohida dekoratsiya */
+
+    /* Qo‘shimcha foydali box bilan bog‘liq xossalar: */
+
+    /* 4. overflow - ichki kontent ko‘p bo‘lsa qanday harakat qilinadi */
+    overflow: visible;     /* Default - ortiqcha chiqib ketadi */
+    overflow: hidden;      /* Ortiqcha qismi ko‘rinmaydi */
+    overflow: scroll;      /* Scroll doim mavjud */
+    overflow: auto;        /* Scroll faqat kerak bo‘lsa ko‘rinadi */
+
+    /* 5. outline - tashqi chegaralovchi chiziq (borderdan tashqarida) */
+    outline: none;
+    outline: 2px solid blue;
+    outline-offset: 4px;
+
+    /* 6. resize - elementni foydalanuvchi kengaytirishi yoki qisqartira olishi */
+    resize: none;          /* Default - resize yo‘q */
+    resize: both;          /* Gorizontal va vertikal */
+    resize: horizontal;    /* Faqat gorizontal */
+    resize: vertical;      /* Faqat vertikal */
+
+    /* 7. visibility - ko‘rinishini boshqarish */
+    visibility: visible;     /* Default - ko‘rinadi */
+    visibility: hidden;      /* Joyini saqlagan holda yo‘qoladi */
+
+    /* 8. opacity - shaffoflik darajasi */
+    opacity: 1;     /* To‘liq ko‘rinadi */
+    opacity: 0.5;   /* Yarim shaffof */
+    opacity: 0;     /* Ko‘rinmaydi */
+
+    /* 9. display - element ko‘rinishini boshqarish */
+    display: block;
+    display: inline-block;
+    display: flex;
+    display: none;
+
+    /* 10. float - elementni yonma-yon joylashtirish */
+    float: none;
+    /* float: left;
+    float: right; */
+
+    /* 11. clear - float elementdan keyingi elementni tozalash */
+    clear: none;
+    clear: both;
+    clear: left;
+    clear: right;
+}
+
+.box {
+    /* 1. O'lcham (width, height) */
+    width: 200px;                 /* Kenglik */
+    height: 150px;                /* Balandlik */
+    max-width: 100%;              /* Maksimal kenglik */
+    min-height: 100px;            /* Minimal balandlik */
+
+    /* 2. Padding (ichki bo'shliq) */
+    padding: 10px;                /* Har tomondan 10px */
+    padding: 10px 20px;           /* Vertikal 10px, gorizontal 20px */
+    padding: 10px 15px 20px 25px; /* Top, Right, Bottom, Left */
+    
+    /* 3. Border (ramka) */
+    border: 2px solid black;         /* Qalinligi, uslubi, rangi */
+    border-top: 2px dashed red;      /* Yuqori ramka */
+    border-radius: 10px;             /* Burchaklarni yumaloqlash */
+    
+    /* 4. Margin (tashqi bo'shliq) */
+    margin: 20px;                /* Har tomondan 20px */
+    margin-left: auto;           /* Chapdan avtomatik */
+    margin-right: auto;          /* O'ngdan avtomatik (markazlashtirish uchun) */
+    
+    /* 5. Display va box model */
+    display: block;              /* Quticha element */
+    box-sizing: border-box;      /* Padding + border = width ichida */
+    /* box-sizing: content-box;  default qiymat — width faqat content uchun */
+
+    /* 6. Shadow (soya) */
+    box-shadow: 5px 5px 10px gray;   /* gorizontal, vertikal, xira, rang */
+    
+    /* 7. Overflow (tashqariga chiqqan kontent) */
+    overflow: hidden;            /* Chiqqan qismni yashirish */
+    overflow-x: auto;            /* Gorizontal scroll */
+    overflow-y: scroll;          /* Har doim vertikal scroll */
+    
+    /* 8. Position va joylashuv */
+    position: relative;          /* Ichidagi absolute elementga nisbatan */
+    top: 10px;
+    left: 20px;
+
+    /* 9. Background (fon) */
+    background-color: #f0f0f0;   /* Fon rangi */
+    background-image: url("rasm.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* 10. Z-index (qatlam ustuvorligi) */
+    z-index: 10;
+
+    /* 11. Opacity (shaffoflik) */
+    opacity: 0.9;                /* 0 to 1 oralig‘ida */
+
+    /* 12. Cursor */
+    cursor: pointer;            /* Sichqoncha ustiga kelganda ko‘rsatkich */
+    
+    /* 13. Transition (animatsiya o‘tish) */
+    transition: all 0.3s ease;
+
+    /* 14. Float va Clear */
+    float: left;                /* Elementni chapga olib chiqish */
+    clear: both;                /* Ikkala tomondan floatni tozalash */
+
+    /* 15. Visibility */
+    visibility: visible;        /* Ko‘rinadigan holat */
+    /* hidden, collapse */
+
+    /* 16. Outline (chegaradan tashqari chiziq, borderdan farqli) */
+    outline: 2px dotted blue;
+
+    /* 17. Aspect Ratio */
+    aspect-ratio: 4 / 3;
+
+    /* 18. Filter (ko‘rinishga ta’sir berish) */
+    filter: blur(1px) brightness(1.2);
+
+    /* 19. Pointer Events */
+    pointer-events: auto;       /* Sichqoncha hodisalariga javob berish */
+    
+    /* 20. User Select */
+    user-select: none;          /* Matnni tanlab bo'lmaydi */
+
+    /* 21. Resize (qutichani o‘zgaruvchan qilish) */
+    resize: both;
+    overflow: auto;             /* resize ishlashi uchun kerak */
+
+    /* 22. Flex/Grid uchun tayyor holat */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

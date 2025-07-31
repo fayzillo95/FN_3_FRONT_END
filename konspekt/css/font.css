@@ -1,0 +1,70 @@
+* {
+    /* Asosiy font xossasi (shorthand) */
+    font: italic small-caps bold 16px/1.5 'Times New Roman', serif;
+
+    /* Har birini alohida yozish */
+    font-style: normal;       /* normal | italic | oblique */
+    font-variant: normal;     /* normal | small-caps */
+    font-weight: 400;         /* normal (400), bold (700), 100–900 */
+    font-size: 16px;          /* px, em, rem, %, vw */
+    line-height: 1.5;         /* normal, son, %, px */
+    font-family: 'Arial', sans-serif;  /* Birinchi mavjud bo‘lgan ishlatiladi */
+
+    /* Qo‘shimcha xossalar */
+    font-size-adjust: none;   /* yoki son (masalan: 0.5) – fallback font o‘lchamini sozlash */
+    font-kerning: normal;     /* auto | normal | none – harflar orasidagi joy */
+    font-optical-sizing: auto;/* auto | none – shriftning optik o‘lchamiga moslashadi */
+    font-stretch: normal;     /* condensed, expanded, narrower, wider yoki % */
+    font-feature-settings: "liga" 1; /* OpenType xususiyatlarini yoqish/o‘chirish */
+    font-variation-settings: "wght" 700; /* variable font sozlamalari */
+
+    /* Unicode bilan bog‘liq */
+    font-language-override: normal;  /* yoki 'SRB', 'ENG', ... */
+    font-synthesis: weight style;    /* none | weight | style | small-caps */
+    font-display: swap;             /* Faqat @font-face uchun: auto | block | swap | fallback | optional */
+
+    /* Misollar */
+    /* font-style */
+    font-style: italic;
+    font-style: oblique;
+
+    /* font-weight */
+    font-weight: normal;
+    font-weight: bold;
+    font-weight: 100;
+    font-weight: 900;
+
+    /* font-size */
+    font-size: 1.2em;
+    font-size: 20px;
+    font-size: 80%;
+
+    /* font-family */
+    font-family: 'Courier New', monospace;
+    font-family: system-ui, sans-serif;
+
+    /* font-variant */
+    font-variant: small-caps;
+
+    /* line-height */
+    line-height: normal;
+    line-height: 1.5;
+    line-height: 120%;
+
+    /* font-stretch */
+    font-stretch: expanded;
+    font-stretch: 75%;
+
+    /* font-feature-settings */
+    font-feature-settings: "smcp" on, "liga" off;
+
+    /* font-variation-settings */
+    font-variation-settings: "wght" 500, "wdth" 75;
+
+    /* font-display (faqat @font-face ichida ishlatiladi) */
+    @font-face {
+        font-family: 'MyFont';
+        src: url('myfont.woff2') format('woff2');
+        font-display: swap;
+    }
+}
