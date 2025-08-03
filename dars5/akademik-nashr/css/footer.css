@@ -1,0 +1,45 @@
+.footer-header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding-top: 30px;
+    height: 100px;
+}
+
+
+
+
+footer{
+    background-color: rgba(214, 207, 198,0.1);
+}
+
+/* IMage style */
+#fedback-image, #telegram-image,#instagram-image{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-left: 25px;
+}
+#footer-header{
+    width: 100%;
+}
+.messager-icons{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+
+/* Salom */
+
+.ilovalar a{
+    padding-bottom: 0%;
+    margin-bottom: -10px;
+}
+
+.ilovalar{
+    margin-bottom: 100px;
+}

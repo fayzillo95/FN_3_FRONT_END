@@ -1,0 +1,77 @@
+
+
+/* MAIN HERO */
+
+.main-hero{
+    width: 100%;
+    height: 500px;
+    margin-left: 0% ;
+    margin-right: 0%;
+    background-color: aqua;
+}
+.main-hero-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 50%;
+}
+
+
+/* XIZMATLAR */
+
+/* SECTION MAIN SERVICE */
+.main-services{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+#main-service-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-list{
+    width: 864px;
+    margin: auto;
+}
+
+.service-list-item{
+    display: flex;
+    align-items: center;
+}
+
+.service-box-image{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    z-index: 4;
+}
+
+.service-context-box{
+    padding-left: 40px;
+}
+
+
+/* BOG"LANISH */
+
+.main-contact-section {
+    background-color: var(--blue);
+    padding-top: 64px;
+    padding-bottom: 64px;
+    color: var(--white);
+}
+
+.main-contact-container{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}

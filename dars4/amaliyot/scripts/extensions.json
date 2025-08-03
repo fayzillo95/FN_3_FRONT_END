@@ -1,0 +1,62 @@
+[
+  {
+    "name": "DevLens",
+    "description": "Quickly inspect page layouts and visualize element boundaries.",
+    "icon": ["fa-solid", "fa-border-none", "g-icon"]
+  },
+  {
+    "name": "StyleSpy",
+    "description": "Instantly analyze and copy CSS from any webpage element.",
+    "icon": ["fa-solid", "fa-eye-dropper", "g-icon"]
+  },
+  {
+    "name": "SpeedBoost",
+    "description": "Optimizes browser resource usage to accelerate page loading.",
+    "icon": ["fa-solid", "fa-gauge-high", "g-icon"]
+  },
+  {
+    "name": "JSONWizard",
+    "description": "Formats, validates, and prettifies JSON responses in-browser.",
+    "icon": ["fa-solid", "fa-code", "g-icon"]
+  },
+  {
+    "name": "TabMaster Pro",
+    "description": "Organizes browser tabs into groups and sessions.",
+    "icon": ["fa-solid", "fa-layer-group", "g-icon"]
+  },
+  {
+    "name": "ViewportBuddy",
+    "description": "Simulates various screen resolutions directly within the browser.",
+    "icon": ["fa-solid", "fa-desktop", "g-icon"]
+  },
+  {
+    "name": "Markup Notes",
+    "description": "Enables annotation and notes directly onto webpages for collaborative debugging.",
+    "icon": ["fa-solid", "fa-pen-to-square", "g-icon"]
+  },
+  {
+    "name": "GridGuides",
+    "description": "Overlay customizable grids and alignment guides on any webpage.",
+    "icon": ["fa-solid", "fa-grip", "g-icon"]
+  },
+  {
+    "name": "Palette Picker",
+    "description": "Instantly extracts color palettes from any webpage.",
+    "icon": ["fa-solid", "fa-palette", "g-icon"]
+  },
+  {
+    "name": "LinkChecker",
+    "description": "Scans and highlights broken links on any page.",
+    "icon": ["fa-solid", "fa-link-slash", "g-icon"]
+  },
+  {
+    "name": "DOM Snapshot",
+    "description": "Capture and export DOM structures quickly.",
+    "icon": ["fa-solid", "fa-camera", "g-icon"]
+  },
+  {
+    "name": "ConsolePlus",
+    "description": "Enhanced developer console with advanced filtering and logging.",
+    "icon": ["fa-solid", "fa-terminal", "g-icon"]
+  }
+]

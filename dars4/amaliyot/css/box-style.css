@@ -1,0 +1,22 @@
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.g-icon{
+    font-size: 55px;
+    margin: 0%;
+    padding: 0%;
+}
+.glava{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+}
