@@ -1,0 +1,32 @@
+.container{
+    width: 1110px;
+    margin: auto;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-header-ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+li{
+    list-style: none;
+}
+.nav-header-ul li a{
+    text-decoration: none;
+}
+
+button{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(119, 60, 42);
+    color: wheat;
+    row-gap: 4px;
+    border: none;
+    border-radius: 12px;
+}
+
+
+
