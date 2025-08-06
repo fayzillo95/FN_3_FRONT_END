@@ -1,0 +1,115 @@
+h1 ,h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    left: 2px;
+    line-height: 20px;
+    color: aliceblue;
+}
+
+
+/* result-h1 */
+
+.result-h1 {
+    color: aqua;
+    font-size: 100px;
+}
+
+.succes-h2 {
+    box-shadow: transparent rgb(187, 162, 211) 50px 50px 50px;
+    color: azure;
+}
+
+
+/* SPAN Item name */
+
+
+/* SPAN Item nums */
+
+.item-right-span {
+    color: rgba(0, 0, 0, 0.479);
+    letter-spacing: 3px;
+}
+
+.item-left-span {
+    letter-spacing: 2px;
+}
+
+.rs1::before {
+    content: "80";
+    color: black;
+}
+
+
+.rs2::before {
+    content: "92";
+    color: black;
+}
+
+
+.rs3::before {
+    content: "61";
+    color: black;
+}
+
+
+.rs4::before {
+    content: "73";
+    color: black;
+}
+
+
+
+/* ITEM NAME */
+
+.item-name1 {
+    text-transform: capitalize;
+    color: rgb(143, 37, 37);
+}
+
+
+.item-name2 {
+    text-transform: capitalize;
+    color: rgba(136, 119, 20, 0.829);
+}
+
+.item-name3 {
+    text-transform: capitalize;
+    color: rgba(49, 139, 21, 0.849);
+}
+
+.item-name4 {
+    text-transform: capitalize;
+    color: rgba(7, 10, 56, 0.733);
+}
+
+
+.right-title {
+    width: 50%;
+    padding-left: 10px;
+    color: none;
+    text-emphasis-color: rgb(33, 206, 206);
+    border-radius: 25px;
+    background: linear-gradient(87deg, deepskyblue, darkviolet, blue, #274bc2, #42c227);
+    background-size: 300% 300%;
+    animation: gradient-animation 5s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+

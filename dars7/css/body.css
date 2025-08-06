@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    border: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.round-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 50%;
+    width: 60%;
+    height: 30vh;
+    background: #61097973;
+    background: linear-gradient(359deg, rgba(54, 5, 68, 0.856) 35%, rgb(134, 77, 153) 100%);
+    box-shadow: linear-gradient(359deg, rgba(164, 107, 180, 0.856) 35%, rgb(67, 28, 80) 100%) 50px 50px 50px inset;
+    text-align: center;
+}
+
+.round-box {
+  background: linear-gradient(300deg,deepskyblue,darkviolet,blue);
+  background-size: 360% 360%;
+  animation: gradient-animation 3s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
