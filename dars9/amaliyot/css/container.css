@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    width: 992px;
+    margin: auto;
+    align-items: center;
+}
+
+.header-container {
+    padding-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    position: relative;
+}

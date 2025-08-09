@@ -1,0 +1,86 @@
+a {
+    color: rgb(117, 218, 58);
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.logo h1 {
+    background: linear-gradient(to top,
+            #ad4158,
+            #cf23cf,
+            /* pushti-binafsha */
+            #b196b1,
+            /* oqish-pushti */
+            #615377,
+            /* qora-jigarrang */
+            #ad867c,
+            /* qora-to'q jigarrang */
+            #524916,
+            /* zaytun jigarrang */
+            #c5ba1c,
+            /* sariq-yashil */
+            #0da72e,
+            /* toza yashil */
+            #1a3db1,
+            /* to'q ko'k */
+            #6f28e2,
+            /* binafsha-ko'k */
+            #b121f3,
+            /* binafsha */
+            #cf23cf,
+            /* pushti-binafsha */
+            #b196b1,
+            /* oqish-pushti */
+            #ad4158
+            /* to'q pushti-qizil */
+        );
+    background-size: auto 300%;
+    /* vertikal bo'lishi uchun */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    animation: rainbow 3s linear infinite;
+}
+
+.header-logo-image-box {
+    width: 100px;
+    height: max-content;
+    background:greenyellow ;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: center 0%;
+    }
+
+    100% {
+        background-position: center 100%;
+    }
+}
+
+
+
+li {
+    list-style: none;
+}
+
+.toggle {
+    width: 20px;
+    height: 3px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: aliceblue;
+}
+
+.menu {
+    display: none;
+}

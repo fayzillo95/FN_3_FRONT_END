@@ -1,0 +1,6 @@
+.header-logo-box{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    letter-spacing: 5px;
+}
