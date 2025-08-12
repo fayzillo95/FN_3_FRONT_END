@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+body{
+    @apply h-[100vh] flex flex-col justify-center items-center 
+}
+
+.site-main{
+    @apply h-[70vh] box-border
+}
+
+.container{
+    @apply flex flex-col w-[992px] gap-12 m-auto 
+}
+
+.header-container{
+    @apply flex justify-between items-center w-[992px] flex-row mb-10
+}
+
+
+.nav-list {
+    @apply flex gap-8
+}
+
+/* main section  */
+
+/* box 1 */
+.item-box1{
+    @apply bg-[url("../img/web-3-desktop.jpg")] bg-cover bg-center col-span-2; 
+}
+
+.item-box2{
+    @apply row-span-2 bg-black text-amber-50 p-4 flex flex-col justify-between 
+}
+.item-box3{
+    @apply text-[46px] leading-[1]  font-extrabold border-none text-justify
+}
+.item-box4{
+    @apply border-none row-span-1 col-span-1 flex flex-col justify-between
+}
+
+
+/* FONTS AND INFO BOX*/
+
+.h3-style{
+    @apply text-[21px] capitalize text-amber-50 font-bold 
+}
+
+.info{
+    @apply text-[12px] text-gray-400 border-b-2 border-gray-600 gap-1 pb-5
+}
+.info{
+    @apply flex flex-col gap-1
+}
+
+.item-box2 .info:last-child{
+    @apply border-none
+}
+
+
+/* boxes */
+
+.box{
+    @apply flex items-center justify-between col-span-1 row-span-1 gap-x-1 h-[16vh] mt-3 
+}
+
+.items-bottom{
+    @apply w-4/7 h-[16vh] flex flex-col justify-between
+}
+
+.mini-img{
+    @apply w-2/7 h-1/1 py-2.5
+}
+
+
+.box-number{
+    @apply text-2xl pt-[-5px] text-start font-bold text-amber-600
+}
+
+.box-paragraph{
+    @apply text-[12px] mb-2.5 text-gray-700 text-justify 
+}
